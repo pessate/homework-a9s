@@ -1,3 +1,4 @@
+#!/bin/bash
 require 'sinatra'
 require "pstore"
 require 'yaml'
