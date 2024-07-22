@@ -30,7 +30,6 @@ class ArticleRoutes < Sinatra::Base
     if summary[:ok]
       {article: summary[:data]}.to_json
     else
-      status 404
       { msg: 'Could not get article with id ' + article_id }.to_json
     end
   end
